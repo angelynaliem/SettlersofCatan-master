@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPlayer">#616161</color>
+    <color name="colorScore">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPurple">#9a67ea</color>
+    <color name="colorRed">#ef5f5a</color>
+    <color name="colorGreen">#4cb524</color>
+    <color name="colorBlue">#3a76ed</color>
+    <color name="colorGrey">#a5b2b5</color>
+
+</resources>

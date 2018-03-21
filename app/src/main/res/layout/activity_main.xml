@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/purple"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/twenty_one_text_size" />
+
+                <TextView
+                    android:id="@+id/purple_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/score"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/fifty_six_text_size" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:layout_marginTop="@dimen/twenty_four"
+                    android:background="@color/colorPurple"
+                    android:onClick="addOneSettlementForPurple"
+                    android:text="@string/settlement_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorPurple"
+                    android:onClick="addTwoCityForPurple"
+                    android:text="@string/city_2" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorPurple"
+                    android:onClick="addOneVPForPurple"
+                    android:text="@string/victory_points_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorPurple"
+                    android:onClick="addOneArmyOrRoadForPurple"
+                    android:text="@string/largest_army_road_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorPurple"
+                    android:onClick="minusOneArmyOrRoadForPurple"
+                    android:text="@string/lose_largest_army_road_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/red"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/twenty_one_text_size" />
+
+                <TextView
+                    android:id="@+id/red_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/score"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/fifty_six_text_size" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:layout_marginTop="@dimen/twenty_four"
+                    android:background="@color/colorRed"
+                    android:onClick="addOneSettlementForRed"
+                    android:text="@string/settlement_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorRed"
+                    android:onClick="addTwoCityForRed"
+                    android:text="@string/city_2" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorRed"
+                    android:onClick="addOneVPForRed"
+                    android:text="@string/victory_points_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorRed"
+                    android:onClick="addOneArmyOrRoadForRed"
+                    android:text="@string/largest_army_road_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorRed"
+                    android:onClick="minusOneArmyOrRoadForRed"
+                    android:text="@string/lose_largest_army_road_1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/one"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/green"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/twenty_one_text_size" />
+
+                <TextView
+                    android:id="@+id/green_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/score"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/fifty_six_text_size" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:layout_marginTop="@dimen/twenty_four"
+                    android:background="@color/colorGreen"
+                    android:onClick="addOneSettlementForGreen"
+                    android:text="@string/settlement_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorGreen"
+                    android:onClick="addTwoCityForGreen"
+                    android:text="@string/city_2" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorGreen"
+                    android:onClick="addOneVPForGreen"
+                    android:text="@string/victory_points_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorGreen"
+                    android:onClick="addOneArmyOrRoadForGreen"
+                    android:text="@string/largest_army_road_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorGreen"
+                    android:onClick="minusOneArmyOrRoadForGreen"
+                    android:text="@string/lose_largest_army_road_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sixteen"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="@string/blue"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/twenty_one_text_size" />
+
+                <TextView
+                    android:id="@+id/blue_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/score"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/fifty_six_text_size" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:layout_marginTop="@dimen/twenty_four"
+                    android:background="@color/colorBlue"
+                    android:onClick="addOneSettlementForBlue"
+                    android:text="@string/settlement_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorBlue"
+                    android:onClick="addTwoCityForBlue"
+                    android:text="@string/city_2" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorBlue"
+                    android:onClick="addOneVPForBlue"
+                    android:text="@string/victory_points_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/eight"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorBlue"
+                    android:onClick="addOneArmyOrRoadForBlue"
+                    android:text="@string/largest_army_road_1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty_four"
+                    android:layout_marginRight="@dimen/twenty_four"
+                    android:background="@color/colorBlue"
+                    android:onClick="minusOneArmyOrRoadForBlue"
+                    android:text="@string/lose_largest_army_road_1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/thirty_two"
+            android:layout_marginTop="@dimen/thirty_two"
+            android:background="@color/colorGrey"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+
+    </RelativeLayout>
+
+</ScrollView>
